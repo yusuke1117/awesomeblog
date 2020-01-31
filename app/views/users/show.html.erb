@@ -1,0 +1,27 @@
+<% provide(:title, @user.name) %>
+<div class="container">
+    <div class="row show-gravatar">
+        <section>
+        <h1>
+        
+            <%= gravatar_for @user %>
+            <%= @user.name %>
+        
+        <%# <%= render 'shared/user_info' %> 
+        </h1>
+        </section>
+        <!-- show Microposts of specific user in their profile(porifle) page -->
+        <div class="microposts-lists">
+            <%= render 'follow_form' if logged_in?%>
+            <% if @user.microposts.any? %>
+                <h3 class="text-center">Microposts Feed</h3>
+                <ol class="microposts-lists">
+                    <%= render @microposts %> <!-- This will go to a partial file -->
+                </ol>
+                <div class="container">
+                    <%= will_paginate @microposts %> <!-- @microposts connects to users_controller -->
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>

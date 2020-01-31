@@ -1,0 +1,9 @@
+<!-- This is The part wehre you can your own posts -->
+<%= form_for @micropost do |f| %>
+    <div class="field">
+        <%= f.text_area :content, placeholder: "What are you thinking about?", class: "w-100" %>
+    </div>
+
+    <%= f.submit "post", class: "btn btn-block btn-primary" %>
+
+<% end %>

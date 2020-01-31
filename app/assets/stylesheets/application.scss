@@ -1,0 +1,242 @@
+@import 'bootstrap';
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+.awesome {
+    margin-top: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    background-color: black;
+}
+
+ .susukinogazou {
+     background: url(susukino.jpeg);
+     background-size: cover;
+     height: 100%;
+      width: 100%;
+    }
+
+ .size {
+     height:400px;
+ }
+
+ .yukimaturi {
+    background: url(sapporo-yukimaturi.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.siden {
+    background: url(siden.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.terebitou {
+    background: url(terebitou.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.card-title{
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.loginbg {
+     background: url(sapporo_station.jpg);
+     background-size: cover;
+     background-position: 50% 50%;
+     height: 100vh;
+}
+
+.logingamen {
+    margin-top: 130px;
+    width: 50%;
+    background-color: rgba(211, 186, 150, 0.616);
+    // margin-top:92px;
+}
+
+.signupbg {
+    background: url(table.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.signupgamen {
+    margin: 100px 250px;
+    width: 50%;
+    background-color: rgba(211, 186, 150, 0.616);
+}
+
+.show-gravatar {
+    margin-top: 5rem;
+}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Users index */
+.users {
+    list-style: none;
+    margin: 0;
+    li {
+      overflow: auto;
+      padding: 10px 0;
+      border-top: 1px solid rgb(238, 238, 238);
+      &:last-child {
+        border-bottom: 1px solid rgb(238, 238, 238);
+      }
+    }
+  }
+
+  
+  /* header */
+  #logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+    line-height: 1;
+
+  }
+  
+  #logo:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* All the content below the navbar */
+  .content {
+    margin: 85px 1.5rem;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .homepage-img {
+    width: 100px;
+  }
+  
+  /* sidebar */
+  aside {
+    section {
+      padding: 10px 0;
+      border-top: 1px solid rgb(238, 238, 238);
+      &:first-child {
+        border: 0;
+        padding-top: 0;
+      }
+      span {
+        display: block;
+        margin-bottom: 3px;
+        line-height: 1;
+      }
+      h1 {
+        font-size: 1.4em;
+        text-align: left;
+        letter-spacing: -1px;
+        margin-bottom: 3px;
+        margin-top: 0px;
+      }
+    }
+  }
+  
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  /* forms */
+  input, textarea, select, .uneditable-input {
+    border: 1px solid #bbb;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    height: auto !important;
+  }
+  
+  .form {
+    width: 40rem;
+    margin-left: 14rem;
+    margin-top: 7rem;
+  }
+  
+  /* Users index */
+  .users {
+    list-style: none;
+    margin: 0;
+    li {
+      overflow: auto;
+      padding: 10px 0;
+      border-top: 1px solid rgb(238, 238, 238);
+      &:last-child {
+        border-bottom: 1px solid rgb(238, 238, 238);
+      }
+    }
+  }
+  
+  /* microposts */
+  
+  .microposts-lists {
+    list-style: none;
+    margin: 57px 0 0 0;
+  
+    li {
+      padding: 10px 0;
+      border-top: 1px solid #e8e8e8;
+    }
+  }
+  .timestamp {
+    color: rgb(160, 160, 160);
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+  }
+  aside {
+    textarea {
+      height: 100px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .post {
+      background-color: rgba(56, 56, 236, 0.473);
+      height:300px;
+      border-radius: 15px;
+  }
+
+

@@ -1,0 +1,12 @@
+<li>
+    <h4><%= micropost.content %></h4>
+    <span>
+        posted <%= time_ago_in_words(micropost.created_at) %> ago.
+    </span>
+    <%# if the user right now is the current _user then they can DELETE their own posts %>
+    <% if current_user?(micropost.user) %>
+        <%= link_to "delete", micropost, method: :delete,
+                                                    data: { confirm: "Are you sure?" },
+                                                    title: micropost.content %>
+    <% end %>
+</li>

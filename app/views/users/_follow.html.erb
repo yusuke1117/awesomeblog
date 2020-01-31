@@ -1,0 +1,9 @@
+<%# this is the follow button %>
+<%= form_for(current_user.relationships.build, remote: true) do |f| %>
+<%# whenever we dlick the follow button, arelationship is created between 2 users %>
+<%# remote: true means it will not need refresh after you click the button %>
+
+<%# how to save an ID without text field/text area/password area %>
+<div><%= hidden_field_tag :followed_id, @user.id %></div>
+<%= f.submit "Follow", class: "btn btn-large btn-primary" %>
+<% end %>

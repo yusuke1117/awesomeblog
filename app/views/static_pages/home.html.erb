@@ -1,0 +1,49 @@
+<% provide(:title, 'Home | ') %>
+<% if logged_in? %>
+<div class="container">
+    <div class="row">
+        <aside class="col-3 post">
+            <section class="mt-4">
+                <!-- This is were you put your gravatar and name -->
+                <%= render 'shared/user_info' %>
+                <!-- link to show profile page-->
+                <span>
+                    <%= link_to "View my profile", current_user, class: "text-center" %>
+                </span>
+            </section>
+            <section>
+                <%= render 'shared/stats' %>
+            </section>
+            <section>
+                <%= render 'shared/micropost_form' %>
+            </section>
+    </aside>        
+        <!-- This is wehre you put your micropost -->
+        <div class="col-9">   
+            <h3>Micropost Feed</h3>
+            <!-- showing all the microposts -->
+            <%= render 'shared/feed' %>
+        </div>
+    </div>
+    <% else%>
+        <div class="jumbotron">
+                <div class="container">
+                    <h1 class="awesome text-center text-white">Susukino</h1>
+                </div>
+
+            <div class="row junbotron">
+                <div class="col-8">
+                    <div class="jumbotron">
+                            <h3 class="text-center text-black">aaaaaaaa</h3>
+                            <p class="text-center text-white">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container susukinogazou"></div>
+                </div>
+            </div>
+        </div>
+    <% end %>
+</div>
+
+

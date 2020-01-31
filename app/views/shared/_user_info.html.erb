@@ -1,0 +1,9 @@
+<!-- This is page shows gravatar ,name, show page link and the # of post you have -->
+<%= link_to gravatar_for(current_user, size: 52), current_user %>
+<h1><%= current_user.name %></h1>
+
+<span>
+    <% pluralize(current_user.microposts.count, "micropost") %>
+    <!-- 0 micropost -->
+    <!-- 72 microposts -->
+</span>
