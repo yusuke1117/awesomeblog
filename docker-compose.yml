@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:5.7
     ports:
-      - "4406:3306"
+      - "4506:3306"
     restart: always
     environment:
       - MYSQL_DATABASE=awesome_blog_db
@@ -17,7 +17,7 @@ services:
     volumes:
       - .:/awesome_blog
     ports:
-      - "3002:3000"
+      - "3001:3000"
     depends_on:
       - db
     environment:

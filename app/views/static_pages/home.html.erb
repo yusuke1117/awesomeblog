@@ -17,29 +17,29 @@
             <section>
                 <%= render 'shared/micropost_form' %>
             </section>
-    </aside>        
+        </aside>        
         <!-- This is wehre you put your micropost -->
         <div class="col-9">   
             <h3>Micropost Feed</h3>
             <!-- showing all the microposts -->
             <%= render 'shared/feed' %>
         </div>
-    </div>
+</div>
     <% else%>
         <div class="jumbotron">
-                <div class="container">
-                    <h1 class="awesome text-center text-white">Susukino</h1>
-                </div>
-
-            <div class="row junbotron">
-                <div class="col-8">
-                    <div class="jumbotron">
-                            <h3 class="text-center text-black">aaaaaaaa</h3>
-                            <p class="text-center text-white">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <div class="row mt-5">
+                <div class="col-12  mt-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="jumbotron">
+                                <h1>Awesome Blog App</h1>
+                                <h1>Welcome to awesomeblog!</h1>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <a class="btn btn-primary btn-lg mt-3" href="signup" role="button">Sign up</a>  
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="container susukinogazou"></div>
                 </div>
             </div>
         </div>
